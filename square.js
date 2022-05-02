@@ -1,12 +1,16 @@
-let s;
-function createSquares(){
-  s = new Clickable(200,200);
-  s.resize(50,50)
-  s.color = " red"
-  s.text = "W"
-  s.cornerRadius = 1
-  //try text color
-  //try stroke
-  //try w
-  
-}//end CreateSquare
+let s = [];
+function createSquares() {
+  for (i = 0; i < 5; i++) {
+    s[i] = new Clickable(200, 200 + i*50);
+    s[i].resize(50, 50);
+    s[i].color = " red";
+    s[i].text = "W";
+    s[i].cornerRadius = 1;
+    s[i].onHover = function () {
+      s[i].color = "blue";
+    }; //onHover
+    s[i].onOutside = function () {
+      s[i].color = "grey";
+    }; //onHover
+  } //end loop
+} //
