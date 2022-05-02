@@ -5,8 +5,8 @@ function setup() {
 
 function draw() {
   background(220);
-  for(i=0 ; i <5 ; i++){
-    s[i].draw();  
+  for(j=0 ; j <5 ; j++){
+    s[j].draw();  
   }//end loop
   
 }
