@@ -7,10 +7,10 @@ function createSquares() {
     s[i].text = "W";
     s[i].cornerRadius = 1;
     s[i].onHover = function () {
-      s[i].color = "blue";
+      this.color = "blue";
     }; //onHover
     s[i].onOutside = function () {
-      s[i].color = "grey";
+      this.color = "grey";
     }; //onHover
   } //end loop
 } //
