@@ -12,5 +12,14 @@ function createSquares() {
     s[i].onOutside = function () {
       this.color = "grey";
     }; //onHover
+    s[i].onPress = function(){
+      this.isClicked = true;
+    }//end onPress
+    s[i].onRelease = function(){
+      this.isClicked = false;
+    }
+   
+   
+    
   } //end loop
 } //
