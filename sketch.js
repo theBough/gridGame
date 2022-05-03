@@ -6,7 +6,11 @@ function setup() {
 function draw() {
   background(220);
   for(j=0 ; j <5 ; j++){
-    s[j].draw();  
+    s[j].draw();
+    if(s[j].isClicked){
+      s[j].x = mouseX;
+      s[j].y = mouseY;
+    }
   }//end loop
   
 }
