@@ -5,12 +5,10 @@ function setup() {
 
 function draw() {
   background(220);
-  for(j=0 ; j <5 ; j++){
-    s[j].draw();
-    if(s[j].isClicked){
-      s[j].x = mouseX;
-      s[j].y = mouseY;
-    }
-  }//end loop
+  for(i=0 ; i <10 ; i++){
+    for(j=0 ; j<10; j++){
+      s[i][j].draw();
+    }//end j loop    
+  }//end i loop
   
 }
