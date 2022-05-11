@@ -1,25 +1,17 @@
 let s = [];
 function createSquares() {
-  for (i = 0; i < 5; i++) {
-    s[i] = new Clickable(200, 200 + i*50);
-    s[i].resize(50, 50);
-    s[i].color = " red";
-    s[i].text = "W";
-    s[i].cornerRadius = 1;
-    s[i].onHover = function () {
+  for (i = 0; i < 10; i++) {
+    s[i] = [];
+    for(j=0 ; j<10 ; j++){
+      s[i][j] = new Clickable(20 + j*20, 20 + i*20);
+    s[i][j].resize(20, 20);
+    s[i][j].color = " red";
+    s[i][j].text = "";
+    s[i][j].cornerRadius = 1;
+    s[i][j].onHover = function () {
       this.color = "blue";
     }; //onHover
-    s[i].onOutside = function () {
-      this.color = "grey";
-    }; //onHover
-    s[i].onPress = function(){
-      this.isClicked = true;
-    }//end onPress
-    s[i].onRelease = function(){
-      this.isClicked = false;
-    }
    
-   
-    
+    }//end j loop    
   } //end loop
 } //
