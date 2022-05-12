@@ -1,6 +1,7 @@
 function setup() {
-  createCanvas(400, 400);+
+  createCanvas(400, 600);+
   createSquares();
+  createStick();
 }
 
 function draw() {
@@ -10,5 +11,9 @@ function draw() {
       s[i][j].draw();
     }//end j loop    
   }//end i loop
+  st.draw();
+  if(st.isClicked){
+    st.locate(mouseX, mouseY)
+  }
   
 }
