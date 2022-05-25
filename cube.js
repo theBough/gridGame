@@ -10,8 +10,8 @@ function createCube(){
   c.onRelease = function(){
     c.isClicked = false;
     c.text = "";
-    c.x = Math.floor(st.x / 30) * 30;
-    c.y = Math.floor(st.y / 30) * 30;
+    c.x = Math.floor(c.x / 30) * 30;
+    c.y = Math.floor(c.y / 30) * 30;
     findCube();
   }//end on Release
   
