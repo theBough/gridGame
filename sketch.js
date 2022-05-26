@@ -1,8 +1,9 @@
 function setup() {
-  createCanvas(400, 600);+
+  createCanvas(400, 600);
   createSquares();
   createStick();
   createCube();
+  createEl();
 }
 
 function draw() {
@@ -21,4 +22,6 @@ function draw() {
     c.locate(mouseX, mouseY)
   }
   
+  l.draw();
+  l2.draw();
 }
