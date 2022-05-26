@@ -2,6 +2,7 @@ function setup() {
   createCanvas(400, 600);+
   createSquares();
   createStick();
+  createCube();
 }
 
 function draw() {
@@ -14,6 +15,10 @@ function draw() {
   st.draw();
   if(st.isClicked){
     st.locate(mouseX, mouseY)
+  }
+  c.draw();
+  if(c.isClicked){
+    c.locate(mouseX, mouseY)
   }
   
 }
