@@ -24,4 +24,12 @@ function draw() {
   
   l.draw();
   l2.draw();
+  if(l2.isClicked){
+    l2.locate(mouseX,mouseY+30)
+    l.locate(mouseX, mouseY)
+  }
+  if(l.isClicked){
+    l2.locate(mouseX,mouseY+30)
+    l.locate(mouseX, mouseY)
+  }
 }
